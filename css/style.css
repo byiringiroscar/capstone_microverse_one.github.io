@@ -41,7 +41,7 @@ header {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 80px;
-  padding-bottom: 10px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -294,14 +294,37 @@ header {
     width: 75%;
   }
   /* feature */
+  .about {
+    padding-right: 160px;
+    padding-left: 160px;
+  }
   .card-container{
     flex-direction: row;
+    gap: 3px;
+    justify-content: stretch;
+    flex-wrap: wrap;
   }
   .card{
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: start;
-    height: 280px;
-    gap: 0;
+    align-items: center;
+    height: 190px;
+    width: 180px;
+    padding: 12px;
+  }
+  .card-image{
+    height: auto;
+    width: auto;
+    display: block;
+  }
+  .card-title{
+    height: auto;
+    width: auto;
+    display: block;
+  }
+  .card-detail{
+    height: auto;
+    width: auto;
+    display: block;
+    padding: auto;
   }
 }
