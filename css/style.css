@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -13,76 +14,82 @@ ul li {
   list-style: none;
 }
 
-.wrapper{
+.wrapper {
   width: 100vw;
-  height: 100vh;
+  background-image: url('../images/mobilebg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-header{
+
+header {
   height: 15%;
   width: 100%;
-  background-color: #F3F3F3;
   display: flex;
   align-items: center;
   padding-left: 20px;
 }
-.main-content{
+
+.main-content {
   height: 85%;
   width: 100%;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  background-color: #FAFAFA;
-  background-image: url('../images/Capture.PNG');
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 10% 5%;
-  
+  gap: 30px;
 }
-.main-content .intro{
+
+.main-content .intro {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  color: #F3481A;
+  color: #f3481a;
   font-size: 35px;
 }
-.main-content .main-into{
-  color: #F61B04;
+
+.main-content .main-into {
+  color: #f61b04;
   font-weight: 700;
   font-family: 'Lato', sans-serif;
-  font-size: 35px;
+  font-size: 45px;
   line-height: 40px;
+  background-image: url("../images/webImage.png");
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ec0e0e4f;
 }
-.main-content .description{
-    color: #5D5D5D;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    padding: 12px;
-    background-color: #F7F7F7;
-    border: 5px solid #FDFDFD;
+
+.main-content .description {
+  color: #5d5d5d;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 12px;
+  background-color: #f7f7f7;
+  border: 5px solid #fdfdfd;
+  width: 100%;
+  line-height: 30px;
 }
-.main-content .time{
+
+.main-content .time {
   color: #616161;
   font-weight: 900;
   font-family: 'Lato', sans-serif;
   font-size: 24px;
-  
 }
+
 .main-content .copy {
   color: #595959;
   font-family: 'Lato', sans-serif;
-  font-weight: 15px;
+  font-size: 15px;
   font-weight: 700;
 }
 
-.about{
+.about {
   width: 100vw;
-  background-image: url('../images/backabout.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-image: url('../images/pattern_bg.png');
+  background-repeat: repeat;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -91,69 +98,74 @@ header{
   padding-top: 40px;
   padding-bottom: 40px;
   gap: 30px;
+  background-color: #272a33;
 }
 
-
-
-.about-title{
+.about-title {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.about-title h3{
+
+.about-title h3 {
   color: white;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 25px;
-
 }
-.about-title hr{
+
+.about-title hr {
   width: 70px;
   margin-top: 12px;
-  border: 1.5px solid #F54C3B;
-  
-  
+  border: 1.5px solid #f54c3b;
 }
-.card-container{
+
+.card-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
-.card{
+
+.card {
   width: 100%;
   height: 110px;
   display: flex;
   background: rgba(186, 182, 182, 0.2);
 }
-.card-image{
+
+.card-image {
   height: 100%;
   width: 23%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card-image img{
+
+.card-image img {
   height: 35px;
   width: 35px;
 }
-.card-title{
+
+.card-title {
   height: 100%;
   width: 22%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card-title h3{
+
+.card-title h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
   font-size: 15px;
-  color: #FF4B38;
+  color: #ff4b38;
   letter-spacing: 1px;
 }
-.card-detail{
+
+.card-detail {
   height: 100%;
   width: 55%;
   display: flex;
@@ -161,17 +173,30 @@ header{
   align-items: center;
   padding: 5px;
 }
-.card-detail p{
+
+.card-detail p {
   color: white;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
 }
-.about .join{
-    background-color: #FF4F38;
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    padding: 20px 40px;
 
+.about .join {
+  background-color: #ff4f38;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  padding: 20px 40px;
+}
+
+@media all and (min-width: 768px) {
+  #menu-logo{
+    display: none;
+  }
+  header{
+    height: 20%;
+  }
+  .main-content{
+    height: 80%;
+  }
 }
