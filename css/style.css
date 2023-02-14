@@ -79,7 +79,6 @@ header{
 }
 
 .about{
-  height: 100vh;
   width: 100vw;
   background-image: url('../images/backabout.png');
   background-repeat: no-repeat;
@@ -87,9 +86,10 @@ header{
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 14px;
+  padding-right: 14px;
   padding-top: 40px;
+  padding-bottom: 40px;
   gap: 30px;
 }
 
@@ -124,14 +124,13 @@ header{
 }
 .card{
   width: 100%;
-  background-color: gray;
   height: 110px;
   display: flex;
+  background: rgba(186, 182, 182, 0.2);
 }
 .card-image{
   height: 100%;
-  width: 25%;
-  background-color: aqua;
+  width: 23%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,8 +141,7 @@ header{
 }
 .card-title{
   height: 100%;
-  width: 25%;
-  background-color: blueviolet;
+  width: 22%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,12 +151,27 @@ header{
   font-weight: 900;
   font-size: 15px;
   color: #FF4B38;
+  letter-spacing: 1px;
 }
 .card-detail{
   height: 100%;
-  width: 50%;
-  background-color: green;
+  width: 55%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5px;
+}
+.card-detail p{
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.about .join{
+    background-color: #FF4F38;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    padding: 20px 40px;
+
 }
