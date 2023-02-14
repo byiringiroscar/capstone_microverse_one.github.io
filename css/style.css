@@ -195,6 +195,97 @@ header {
   padding: 20px 40px;
 }
 
+/* feature section start */
+.feature{
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-content: center;
+  padding-right: 14px;
+  padding-left: 14px;
+  padding-top: 40px;
+
+}
+.feature-bar{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+}
+.feature-bar h3{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #1E2129;
+}
+.feature-bar hr{
+  width: 70px;
+  border: 1.5px solid #f54c3b;
+}
+.feature-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 32px;
+}
+.card-feature{
+  width: 100%;
+  height: 200px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  display: flex;
+  flex-direction: row;
+  
+}
+.feature-image{
+  width: 35%;
+  height: 100%;
+  background-image: url('../images/square_pattern.jpg');
+  background-size: 40% 40%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: relative;
+}
+.feature-image img{
+  height: 92%;
+  width: 92%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+.feature-detail{
+  width: 65%;
+  height: 100%;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.feature-detail .feature-title{
+    color: #292929;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.feature-detail hr{
+  width: 10%;
+}
+.feature-detail .feature-intro{
+  color: #EF7042;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+.feature-detail .feature-description{
+  color: #676767;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+
+}
+
 @media all and (min-width: 768px) {
   .wrapper{
     height: auto;
@@ -293,7 +384,7 @@ header {
   .main-content .description{
     width: 75%;
   }
-  /* feature */
+  /* main program start*/
   .about {
     padding-right: 160px;
     padding-left: 160px;
@@ -327,4 +418,5 @@ header {
     display: block;
     padding: auto;
   }
+  /* main program about end */
 }
