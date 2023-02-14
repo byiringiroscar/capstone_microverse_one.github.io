@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -27,5 +28,137 @@ header{
 .main-content{
   height: 85%;
   width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #FAFAFA;
+  background-image: url('../images/Capture.PNG');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 10% 5%;
+  
+}
+.main-content .intro{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #F3481A;
+  font-size: 35px;
+}
+.main-content .main-into{
+  color: #F61B04;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+}
+.main-content .description{
+    color: #5D5D5D;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 12px;
+    background-color: #F7F7F7;
+    border: 5px solid #FDFDFD;
+}
+.main-content .time{
+  color: #616161;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  
+}
+.main-content .copy {
+  color: #595959;
+  font-family: 'Lato', sans-serif;
+  font-weight: 15px;
+  font-weight: 700;
+}
+
+.about{
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../images/backabout.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 40px;
+  gap: 30px;
+}
+
+
+
+.about-title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.about-title h3{
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+
+}
+.about-title hr{
+  width: 70px;
+  margin-top: 12px;
+  border: 1.5px solid #F54C3B;
+  
+  
+}
+.card-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.card{
+  width: 100%;
+  background-color: gray;
+  height: 110px;
+  display: flex;
+}
+.card-image{
+  height: 100%;
+  width: 25%;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-image img{
+  height: 35px;
+  width: 35px;
+}
+.card-title{
+  height: 100%;
+  width: 25%;
   background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-title h3{
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  color: #FF4B38;
+}
+.card-detail{
+  height: 100%;
+  width: 50%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
