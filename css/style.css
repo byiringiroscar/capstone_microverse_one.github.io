@@ -12,6 +12,7 @@ a {
 
 ul li {
   list-style: none;
+  cursor: pointer;
 }
 
 .wrapper {
@@ -489,7 +490,10 @@ footer{
     font-weight: 700;
     font-size: 14px;
   }
-  .single-nav.active{
+  .single-nav:hover{
+    color: #F1614F;
+  }
+  .single-nav.active a{
     color: #F1614F;
   }
   .single-nav.square{
@@ -515,6 +519,7 @@ footer{
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     font-size: 15px;
+    
   }
   .main-content .description{
     width: 75%;
