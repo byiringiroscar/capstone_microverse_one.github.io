@@ -301,10 +301,10 @@ header {
 
 /* partner section start */
 .partner{
-  height: 100vh;
+  height: auto;
   width: 100vw;
   background-color: #414246;
-  padding: 30px;
+  padding: 40px;
 }
 .partner-header{
   width: 100%;
@@ -324,6 +324,50 @@ header {
 .partner-header hr{
   border: 1px solid #FF4F38;
   width: 10%;
+}
+.partner-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.partner-container img{
+  width: 150px;
+  height: auto;
+}
+/* partner section end */
+footer{
+  width: 100vw;
+  background-color: #F2F2F2;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.footer .footer-logo{
+  color: #3E3E3E;
+  font-weight: 900;
+  font-size: 75px;
+}
+.footer-logo span{
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 45px;
+  color: #F71506;
+}
+.footer-right{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #29292e;
+  line-height: 17px;
 }
 
 @media all and (min-width: 768px) {
