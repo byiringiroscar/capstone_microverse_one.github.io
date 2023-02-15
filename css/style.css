@@ -285,6 +285,17 @@ header {
   font-weight: 700;
 
 }
+.load-more{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  border: 1px solid gray;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  color: gray;
+}
 
 @media all and (min-width: 768px) {
   .wrapper{
@@ -419,4 +430,19 @@ header {
     padding: auto;
   }
   /* main program about end */
+  /* feature speaker section start */
+  .feature{
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  .feature-container{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-feature{
+    width: 45%;
+  }
 }
