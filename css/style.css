@@ -476,7 +476,7 @@ footer{
   .card-container{
     flex-direction: row;
     gap: 3px;
-    justify-content: stretch;
+    justify-content: center;
     flex-wrap: wrap;
   }
   .card{
