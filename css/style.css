@@ -198,7 +198,6 @@ header {
 /* feature section start */
 .feature{
   width: 100vw;
-  height: 100vh;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -207,6 +206,7 @@ header {
   padding-right: 14px;
   padding-left: 14px;
   padding-top: 40px;
+  padding-bottom: 40px;
 
 }
 .feature-bar{
@@ -295,6 +295,35 @@ header {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
   color: gray;
+}
+
+/* card feature end */
+
+/* partner section start */
+.partner{
+  height: 100vh;
+  width: 100vw;
+  background-color: #414246;
+  padding: 30px;
+}
+.partner-header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+.partner-title{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #FDFDFD;
+  font-size: 32px;
+}
+.partner-header hr{
+  border: 1px solid #FF4F38;
+  width: 10%;
 }
 
 @media all and (min-width: 768px) {
@@ -444,5 +473,9 @@ header {
 
   .card-feature{
     width: 45%;
+  }
+  /* card feature end */
+  .load-more{
+    display: none;
   }
 }
