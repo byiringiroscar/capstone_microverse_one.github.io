@@ -159,12 +159,12 @@ header {
 /* co-about section end */
 .past-summit{
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 70px;
   gap: 20px;
   background-color: #FFFFFF;
 }
@@ -228,6 +228,48 @@ header {
   font-weight: 700;
   color: white;
 }
+/* past section end */
+
+/* partner section start */
+.partner{
+  height: auto;
+  width: 100vw;
+  background-color: #414246;
+  padding: 40px;
+}
+.partner-header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+.partner-title{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #FDFDFD;
+  font-size: 32px;
+}
+.partner-header hr{
+  border: 1px solid #FF4F38;
+  width: 10%;
+}
+.partner-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.partner-container img{
+  width: 150px;
+  height: auto;
+}
+/* partner section end */
 @media all and (min-width: 768px) {
   .wrapper{
     height: auto;
