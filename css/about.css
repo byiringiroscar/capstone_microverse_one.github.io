@@ -270,6 +270,38 @@ header {
   height: auto;
 }
 /* partner section end */
+
+/* footer start */
+footer{
+  width: 100vw;
+  background-color: #F2F2F2;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.footer .footer-logo{
+  color: #3E3E3E;
+  font-weight: 900;
+  font-size: 75px;
+}
+.footer-logo span{
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 45px;
+  color: #F71506;
+}
+.footer-right{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #29292e;
+  line-height: 17px;
+}
 @media all and (min-width: 768px) {
   .wrapper{
     height: auto;
@@ -366,7 +398,8 @@ header {
   .single-top{
     color: white;
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-weight: 900;
+    font-size: 15px;
   }
   .main-content .description{
     width: 75%;

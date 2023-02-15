@@ -463,7 +463,8 @@ footer{
   .single-top{
     color: white;
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-weight: 900;
+    font-size: 15px;
   }
   .main-content .description{
     width: 75%;
