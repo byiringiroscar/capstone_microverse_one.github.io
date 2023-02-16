@@ -163,6 +163,10 @@ header {
   background-color: #272a33;
 }
 
+.join-container {
+  display: none;
+}
+
 .about-title {
   width: 100%;
   display: flex;
@@ -196,6 +200,12 @@ header {
   height: 110px;
   display: flex;
   background: rgba(186, 182, 182, 0.2);
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+.card:hover {
+  border: 1px solid white;
 }
 
 .card-image {
@@ -603,6 +613,29 @@ footer {
     width: auto;
     display: block;
   }
+
+  .join {
+    display: none;
+  }
+
+  .join-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .join-container .join-desktop {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #fdfdfd;
+    transition: 0.5s ease-in-out;
+  }
+
+  .join-desktop:hover {
+    color: #ff4f38;
+  }
+
 
   /* main program about end */
 
