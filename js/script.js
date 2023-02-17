@@ -38,6 +38,18 @@ const speakerPeople = {
     image: './images/jim.jpg',
     description: 'we are happy to develop your things in professional way on time',
   },
+  4: {
+    name: 'Lancelot N',
+    title: 'Software developer from Rwanda',
+    image: './images/lan.png',
+    description: 'we are happy to develop your things in professional way on time',
+  },
+  5: {
+    name: 'Yves H',
+    title: 'Software developer from Rwanda',
+    image: './images/ves.png',
+    description: 'we are happy to develop your things in professional way on time',
+  },
 };
 
 let html = '';

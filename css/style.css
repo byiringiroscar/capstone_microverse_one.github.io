@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap');
 
+:root {
+  --primary-color: #f1614f;
+  --primary-font: 'Lato', sans-serif;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -78,17 +83,17 @@ header {
 .nav-mobile li .nav-a {
   color: white;
   font-size: 40px;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-weight: 900;
 }
 
 .nav-mobile li .nav-a:hover {
-  color: #f1614f;
+  color: var(--primary-color);
 }
 
 .nav-mobile hr {
   width: 40%;
-  border: 1px solid #f1614f;
+  border: 1px solid var(--primary-color);
 }
 
 .main-content {
@@ -104,7 +109,7 @@ header {
 }
 
 .main-content .intro {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-weight: 400;
   color: #f3481a;
   font-size: 35px;
@@ -113,7 +118,7 @@ header {
 .main-content .main-into {
   color: #f61b04;
   font-weight: 700;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-size: 45px;
   line-height: 40px;
   background-image: url("../images/webImage.png");
@@ -124,7 +129,7 @@ header {
 
 .main-content .description {
   color: #5d5d5d;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-weight: 700;
   font-size: 18px;
   padding: 12px;
@@ -137,13 +142,13 @@ header {
 .main-content .time {
   color: #616161;
   font-weight: 900;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-size: 24px;
 }
 
 .main-content .copy {
   color: #595959;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-size: 15px;
   font-weight: 700;
 }
@@ -177,7 +182,7 @@ header {
 
 .about-title h3 {
   color: white;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-weight: 400;
   font-size: 25px;
 }
@@ -230,7 +235,7 @@ header {
 }
 
 .card-title h3 {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-weight: 900;
   font-size: 15px;
   color: #ff4b38;
@@ -248,7 +253,7 @@ header {
 
 .card-detail p {
   color: white;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -256,7 +261,7 @@ header {
 .about .join {
   background-color: #ff4f38;
   color: white;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-weight: 900;
   padding: 20px 40px;
 }
@@ -284,7 +289,7 @@ header {
 }
 
 .feature-bar h3 {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-weight: 700;
   font-size: 22px;
   color: #1e2129;
@@ -304,10 +309,13 @@ header {
 
 .card-feature {
   width: 100%;
-  height: 200px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px, rgba(17, 17, 26, 0.1) 0 24px 80px;
+  height: 170px;
   display: flex;
   flex-direction: row;
+}
+
+#feature-cont .card-feature:nth-child(n+3) {
+  display: none;
 }
 
 .feature-image {
@@ -339,7 +347,7 @@ header {
 
 .feature-detail .feature-title {
   color: #292929;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-weight: 700;
   font-size: 20px;
 }
@@ -350,13 +358,13 @@ header {
 
 .feature-detail .feature-intro {
   color: #ef7042;
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
+  font-family: var(--primary-font);
+  font-weight: 700;
 }
 
 .feature-detail .feature-description {
   color: #676767;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-weight: 700;
 }
 
@@ -367,9 +375,16 @@ header {
   padding-top: 20px;
   padding-bottom: 15px;
   border: 1px solid gray;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-weight: 900;
   color: gray;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
 }
 
 /* card feature end */
@@ -380,6 +395,7 @@ header {
   width: 100vw;
   background-color: #414246;
   padding: 40px;
+  display: none;
 }
 
 .partner-header {
@@ -392,7 +408,7 @@ header {
 }
 
 .partner-title {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-weight: 700;
   color: #fdfdfd;
   font-size: 32px;
@@ -425,7 +441,7 @@ footer {
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   gap: 40px;
@@ -445,7 +461,7 @@ footer {
 }
 
 .footer-right {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--primary-font);
   font-weight: 700;
   font-size: 20px;
   color: #29292e;
@@ -522,6 +538,11 @@ footer {
     padding-top: 110px;
   }
 
+  .main-content .main-into {
+    font-size: 72px;
+    line-height: 60px;
+  }
+
   nav ul {
     display: flex;
     gap: 25px;
@@ -530,22 +551,22 @@ footer {
 
   nav ul .single-nav {
     color: #a8a8a8;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--primary-font);
     font-weight: 700;
     font-size: 14px;
   }
 
   .single-nav:hover {
-    color: #f1614f;
+    color: var(--primary-color);
   }
 
   .single-nav.active a {
-    color: #f1614f;
+    color: var(--primary-color);
   }
 
   .single-nav.square {
-    color: #f1614f;
-    border: 5px solid #f1614f;
+    color: var(--primary-color);
+    border: 5px solid var(--primary-color);
     padding-left: 12px;
     padding-right: 22px;
     padding-top: 8px;
@@ -566,7 +587,7 @@ footer {
 
   .single-top {
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--primary-font);
     font-weight: 900;
     font-size: 15px;
   }
@@ -626,7 +647,7 @@ footer {
 
   .join-container .join-desktop {
     font-size: 18px;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--primary-font);
     font-weight: 700;
     color: #fdfdfd;
     transition: 0.5s ease-in-out;
@@ -655,8 +676,22 @@ footer {
     width: 45%;
   }
 
+  #feature-cont .card-feature:nth-child(n) {
+    display: flex;
+  }
+
   /* card feature end */
   .load-more {
     display: none;
+  }
+
+  /* partner section start */
+  .partner {
+    display: block;
+  }
+
+  /* footer section start */
+  footer {
+    display: flex;
   }
 }
