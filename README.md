@@ -120,7 +120,10 @@ Example command:
 ### Setup
 
 Clone this repository to your desired folder:
-https://github.com/byiringiroscar/capstone_microverse_one
+
+```
+  git clone https://github.com/byiringiroscar/capstone_microverse_one
+```
 
 <!--
 Example commands:
@@ -135,6 +138,10 @@ Example commands:
 
 
 Install this project with: cd capstone_microverse_one
+
+```
+  cd capstone_microverse_one
+```
 <!--
 Example command:
 
@@ -162,7 +169,6 @@ Example command:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
